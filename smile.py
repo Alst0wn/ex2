@@ -1,0 +1,45 @@
+import turtle
+
+def cir (x):
+    for i in range (400):
+        turtle.forward(3.14/400*x)
+        turtle.left(0.9)
+
+def duga (x):
+    for i in range (100):
+        turtle.forward(3.14/200*x)
+        turtle.right(1.8)
+
+turtle.shape('turtle')
+turtle.speed (10)
+turtle.fillcolor('yellow')
+turtle.begin_fill()
+cir(200)
+turtle.end_fill()
+turtle.penup()
+turtle.fillcolor('blue')
+turtle.goto(50,130)
+turtle.pendown()
+turtle.begin_fill()
+cir(20)
+turtle.end_fill()
+turtle.penup()
+turtle.goto(-50,130)
+turtle.pendown()
+turtle.begin_fill()
+cir(20)
+turtle.end_fill()
+turtle.penup()
+turtle.color('red')
+turtle.width(10)
+turtle.goto(50,70)
+turtle.pendown()
+turtle.right(90)
+duga(100)
+turtle.penup()
+turtle.color('black')
+turtle.width(10)
+turtle.goto(0,100)
+turtle.pendown()
+turtle.right(180)
+turtle.forward(20)
